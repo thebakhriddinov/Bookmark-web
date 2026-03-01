@@ -7,9 +7,10 @@
 }
 
 :root {
-    --mainColor:#4D61D2;
+    --mainColor:#5368df;
     --textColor:rgb(188, 186, 186);
-    --secondHeading:36px;
+    --secondHeading1:35px;
+    --secondHeading:25px;
 }
 
 body {
@@ -66,7 +67,7 @@ header {
   display: none;
   flex-direction: column;
   margin-top: 50px;
-  background: #5267DF;
+  background:  var(--mainColor);
   z-index: 999;
 }
 
@@ -100,24 +101,25 @@ header {
 
 .hero {
     margin-top: 30px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column-reverse;
 }
 
 .rightDiv {
     position: relative;
-    margin-bottom: 250px;
+    margin-bottom: 300px;
 }
 
 .decor {
     position: absolute;
-    width: 320px;
+    width: 270px;
     height: 150px;
-    background-color: #4D61D2;
+    background-color:  var(--mainColor);
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     right: -30px;
-    top: 65px;
+    top: 100px;
 
 }
 
@@ -131,7 +133,7 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     color: #202740;
     font-weight: 600;
 }
@@ -147,7 +149,7 @@ h1 {
 
 .heroImg {
     position: absolute;
-    width: 300px;
+    width: 90vw;
     z-index: 100;
 }
 
@@ -159,7 +161,7 @@ h1 {
 .btn1 {
     width: 120px;
     height: 35px;
-    background-color: #5265D6;
+    background-color: var(--mainColor);
     color: white;
     font-size: 12px;
     font-weight: 450;
@@ -178,7 +180,7 @@ h1 {
 }
 
 .btn2:hover {
-    background-color: #5265D6;
+    background-color: var(--mainColor);
     color: white;
     transition: all 0.5s;
 }
@@ -203,6 +205,126 @@ h1 {
     display: flex;
 }
 
+.desktop {
+    display: none;
+}
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200vh; */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 550;
+    font-size: var(--secondHeading);
+}
+
+.tabs {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+    width: 50vw;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #777;
+}
+
+.tab.active {
+  color: #000;
+}
+
+.liner {
+    width: 70vw;
+}
+
+.line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: #ff4c4c;
+  transition: 0.3s ease;
+}
+
+/* content */
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.content {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content.active {
+  display: flex; /* show only when active */
+}
+
+.btnMini {
+    display: none;
+    width: 120px;
+    height: 40px;
+    border: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 450;
+    margin-top: 20px;
+}
+
+.contentLeft {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentRight {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.img1 {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.btnMini {
+    display: none;
+}
+
 
 
 /* desktop */
@@ -213,6 +335,9 @@ h1 {
     }
     .mobile {
         display: none;
+    }
+    .desktop {
+        display: flex;
     }
     header {
         padding-top: 30px;
@@ -278,7 +403,7 @@ h1 {
     .decor {
         border-top-left-radius: 200px;
         border-bottom-left-radius: 200px;
-        left: -60px;
+        left: -76px;
         width: 599.5px;
         height: 350px;
     }
@@ -301,5 +426,57 @@ h1 {
         height: 50px;
     }
 
+    /* FEATURES */
+
+    .features {
+        margin-top: 260px;
+    }
+    .heading {
+        font-size: var(--secondHeading1);
+    }
+    .tabText {
+        text-align: center;
+    }
+    .tabs {
+        flex-direction: row;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+    .tab {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .liner {
+        display: none;
+        width: 0px;
+    }
+    .content {
+        flex-direction: row;
+        gap: 150px;
+    }
+    .contentRight {
+        align-items: start;
+        gap: 20px;
+    }
+    .btnMini {
+        display: flex;
+    }
+    .img1 {
+        width: 30vw;
+    }
+    .decor2 {
+        z-index: -10;
+        position: absolute;
+        width: 700px;
+        height: 300px;
+        background-color:  var(--mainColor);
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+        right: 100px;
+        top: 50px;
+    }
+    .decor3 {
+        top: 120px;
+    }
 
 }
