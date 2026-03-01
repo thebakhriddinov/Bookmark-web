@@ -28,3 +28,21 @@ tabs.forEach((tab, index) => {
     moveLine(tab);
   });
 });
+
+
+// ACCORDION
+
+const items = document.querySelectorAll(".item");
+
+items.forEach(item => {
+  const btn = item.querySelector(".question");
+
+  btn.addEventListener("click", () => {
+
+    //faqat bittasi ochiq bo'lishi
+    items.forEach(i => {
+      if(i !== item) i.classList.remove("active");
+    });
+    item.classList.toggle("active");
+  })
+})
