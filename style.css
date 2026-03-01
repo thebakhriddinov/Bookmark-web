@@ -378,63 +378,62 @@ h1 {
     font-weight: 450;
 }
 
-    /* ACCORDION */
-    .accordion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 600px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    .accordion p {
-        margin-bottom: 50px;
-    }
-    .item {
-        border-bottom: 1px solid #ddd;
-    }
-    .question {
-        width: 100%;
-        padding: 16px;
-        background: none;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: start;
-    }
-    .icon {
-        font-size: 20px;
-        transition: all 0.5s;
-    }
-    .answer {
-        overflow: hidden;
-        max-height: 0;
-        padding: 0 16px;
-        transition: max-height 0.35s ease, padding 0.35s ease;
-        color: #555;
-        font-size: 12px;
-    }
-    .btn3 {
-        align-self: center;
-        margin-top: 30px;
-    }
-    /* active holat */
-    .item.active .answer {
-        max-height: 200px;
-        padding: 0 16px 16px;
-    }
-    
-    .item.active .icon {
-        transform:rotate(180deg)
-    }
-
-
+/* ACCORDION */
 .accordion {
-padding-bottom: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
+.accordion p {
+    margin-bottom: 50px;
+}
+.item {
+    border-bottom: 1px solid #ddd;
+}
+.question {
+    width: 100%;
+    padding: 16px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+.icon {
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.answer {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 16px;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    color: #555;
+    font-size: 12px;
+}
+.btn3 {
+    align-self: center;
+    margin-top: 30px;
+}
+/* active holat */
+.item.active .answer {
+    max-height: 200px;
+    padding: 0 16px 16px;
+}
+
+.item.active .icon {
+    transform:rotate(180deg)
+}
+
+/* FOOTER */
+
+
 
 /* desktop */
 @media (min-width: 1024px) {
