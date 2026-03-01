@@ -14,7 +14,7 @@
     --headingColor:#252b46;
 }
 
-body {
+.container {
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -431,13 +431,98 @@ h1 {
     transform:rotate(180deg)
 }
 
+.btn3 {
+    display: flex;
+}
+
 /* FOOTER */
 
+.top-side {
+    margin: 0;
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.texting {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: white;
+}
+.heading3 {
+    color: white;
+    font-weight: 500;
+    font-size: var(--secondHeading);
+    text-align: center;
+}
+form {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#email, .contactBtn {
+    width: 85vw;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 30px;
+}
 
+.contactBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    color: white;
+    background-color: #FA5959;
+}
+
+.bottom-side {
+    padding-bottom: 50px;
+    background-color: #252b46;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links2 {
+    text-decoration: none;
+    color: rgb(223, 221, 221);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+.logosWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .div {
+    height: 100vh;
+} */
 
 /* desktop */
 @media (min-width: 1024px) {
-    body {
+    .container {
         padding-left: 150px;
         padding-right: 150px;
     }
@@ -618,8 +703,10 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         max-width: 600px;
-        margin: 40px auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .accordion p {
         margin-bottom: 50px;
@@ -662,7 +749,41 @@ h1 {
     .item.active .icon {
         transform:rotate(180deg)
     }
-    
 
-
+    /* FOOTER */
+    .top-side {
+        width: 100%;
+    }
+    form {
+        flex-direction: row;
+        gap: 10px
+    }
+    #email {
+        width: 300px;
+    }
+    .contactBtn {
+        width: 120px;
+    }
+    .bottom-side {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .links2 {
+        font-size: 14px;
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    .item {
+        width: 400px;
+    }
+    .heading {
+        width: 500px;
+    }
+    .textt {
+        width: 500px;
+    }
 }

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="container">
         <a href="index.html"><img class="logo" src="./images/logo-bookmark.svg" alt="bookmark"></a>
     
     
@@ -39,7 +39,7 @@
     </header>
 
     <!-- HERO -->
-    <div class="hero">
+    <div class="hero container">
         <div class="leftDiv">
             <h1>A Simple Bookmark <br> Manager</h1>
             <p class="heroText">A clean and simple interface to organize <br class="mobile"> your favourite <br class="desktop"> websites. Open a new <br class="mobile"> browser tab and see your sites load <br> instantly. Try it for free.</p>
@@ -56,7 +56,7 @@
     </div>
 
     <!-- FEATURES SECTION -->
-     <div class="features">
+     <div class="features container">
         <div class="textWrapper">
             <h2 class="heading">Features</h2>
             <p class="heroText tabText">Our aim is to make it quick and easy for you <br class="mobile"> to access your <br class="desktop"> favourite websites Your <br class="mobile"> bookmarks sync between your devices <br class="desktop"> so <br class="mobile"> you can access them on the go.</p>
@@ -124,7 +124,7 @@
 
     <!-- EXTENSION section -->
 
-    <div class="extension">
+    <div class="extension container">
         <h2 class="heading">Download the extension</h2>
         <p class="heroText tabText">We've got more browsers in the pipeline. <br class="mobile"> Please do let us know if <br class="desktop"> you've got a <br class="mobile"> favourite you'd like us to prioritize.</p>
 
@@ -158,9 +158,9 @@
 
     <!-- FAQ section -->
 
-    <div class="accordion">
+    <div class="accordion ">
         <h2 class="heading">Frequently Asked Questions</h2>
-        <p class="heroText tabText">Here are some of our FAQs.If you have any other questions <br> you'd like answered please feel free to email us. </p>
+        <p class="heroText tabText textt">Here are some of our FAQs.If you have any other questions <br> you'd like answered please feel free to email us. </p>
 
         <div class="item">
             <button class="question">
@@ -208,8 +208,8 @@
 
     <footer>
         <div class="top-side">
-            <p>35.000 ALREADY JOINED</p>
-            <h2>Stay up-to-date with what <br> we're doing</h2>
+            <p class="texting">35.000 ALREADY JOINED</p>
+            <h2 class="heading3">Stay up-to-date with what <br> we're doing</h2>
 
             <form action="#">
                 <input type="email" placeholder="Enter you email address" id="email">
@@ -218,19 +218,21 @@
         </div>
 
         <div class="bottom-side">
-            <ul>
-                <li><a href="#"> <img src="./images/logo-bookmark.svg" alt="logo"></a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="wrapper">
+                <li><a class="links2" href="#"> <img src="./images/logo-bookmark.svg" alt="logo"></a></li>
+                <li><a class="links2" href="#">Features</a></li>
+                <li><a class="links2" href="#">Pricing</a></li>
+                <li><a class="links2" href="#">Contact</a></li>
             </ul>
 
-            <ul>
+            <ul class="logosWrapper">
                 <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook"></a></li>
                 <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter"></a></li>
             </ul>
         </div>
     </footer>
+
+    <div class="div"></div>
 
 
     <script src="main.js"></script>
